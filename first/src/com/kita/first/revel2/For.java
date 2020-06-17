@@ -1,4 +1,4 @@
-package com.kita.first.repeat;
+package com.kita.first.revel2;
 
 public class For {
 
