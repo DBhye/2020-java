@@ -50,4 +50,4 @@ public class BreakMission1 {
 
 //System.out.print("숫자입력");
 //for(int i=0; i<arr.length; i++){
-// myArr[i] = scan.nextInt; }
+// myArr[i] = scan.nextInt; } 이렇게도 가능.
