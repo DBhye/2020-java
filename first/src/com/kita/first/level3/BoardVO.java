@@ -4,7 +4,7 @@ public class BoardVO {
 	private String title;
 	private String content;
 	private int writeId;
-	
+	//상수는 유일하게 private 하지않는 멤버필드.
 	public BoardVO() {}
 	
 	public BoardVO(String title, String content, int writeId) {
