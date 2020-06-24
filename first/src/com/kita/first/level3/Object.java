@@ -39,8 +39,8 @@ public class Object {
 		// setter와 기본생성자를 넣지않고 getter만 넣어서 상수를 받는 클래스를 만들 수 있다.
 		// object는 자바에서 최상위 부분을 의미한다.(모든 객체는 object를 상속받는다.= object는 누구든지 상속받을 수 있다.)
 		//int[] arr = new int[0]; int[] temp = new int[0]; 각각 다른 방의 주솟값을 가진다.
-		// temp = arr // temp는 arr의 주솟값을 가리키게 된다.
-
+		// temp = arr // arr가 가리키는 곳을 temp가 가리키게 된다.
+		//클래스에 public이 없으면 메소드에도 public을 붙이지 않는다.
 		
 	}
 
