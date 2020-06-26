@@ -4,34 +4,33 @@ public class Baseball {
 	private int[] rArr;
 	
 	public Baseball(int num) {
-		init(num);
+		init(num);		
 	}
 	
-	void init(int num) {
+	private void init(int num) {
+		rArr = new int[num];
+		setRandom();
+	}
 	
-	rArr = new int [num];
-	setRandom();
-	} 
+	private void setRandom() {
+		for(int i=0; i<rArr.length; i++) {
+			rArr[i] = (int)(Math.random() * 9 + 1);
+			
+			for(int z=0; z<i; z++) {
+				if(rArr[i] == rArr[z]) {
+					i--;
+					break;
+				}
+			}
+		}		
+		System.out.println(Arrays.toString(rArr));
+	}
 	
-	 private void setRandom() {
-		
-		 int rVal = (int) (Math.random() * 1 + 9);
-		 for(int i=0; i<rArr.length; i++) {
-			 rArr[i]=rVal;
-			 
-			 for(int z=0; z<rArr.length-1; z++) {
-				 if(rArr[i]==rArr[z]) {
-					 i--;
-					 break;
-				 }
-			 }
-		 }
-		 
-		 System.out.println(Arrays.toString(rArr));
-	 }
-	 
-	 
-	 public int get(int idx) {
-		 return rArr[idx];
-	 }
+	public int get(int idx) {
+		return rArr[idx];
+	}
+	
+	
 }
+
+
