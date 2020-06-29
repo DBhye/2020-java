@@ -4,6 +4,7 @@ public class Value {
 	
 	private int val; 
 	
+	
 	public Value(int val) {
 		this.val = val;
 	}
@@ -12,6 +13,15 @@ public class Value {
 	}
 	@Override
 	public boolean equals(Object obj) {
-		return false;
+		Value value=(Value) obj;
+		
+	/*	if(val == s.getVal()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}*/
+		return this.val==value.getVal();
 	}
 }
