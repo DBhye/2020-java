@@ -24,4 +24,11 @@ public class Value {
 	}*/
 		return this.val==value.getVal();
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("%d",val);
+	// return String.Valueof(val);
+	}
+	
 }
