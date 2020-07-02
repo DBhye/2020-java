@@ -21,6 +21,9 @@ public class Unit {
 	}
 
 	
+	public void setCurrent_hp(int hp) {
+		this.current_hp = hp;
+	}
 	
 	public void getDamage(int damage) {
 		current_hp -= damage;
